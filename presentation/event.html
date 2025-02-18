@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Événement en Bref - Cyber Humanum Est</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <section>
+        <h3>Qu'est-ce que le CHE ?</h3>
+        <img src="../images/che_logo.png" alt="logo" class="logo">
+        <p>Le Cyber Humanum Est (CHE) est un exercice de <b>cyber-guerre réaliste</b> où plusieurs équipes s'affrontent en attaque et défense sur des infrastructures virtuelles et physiques.</p>
+        <p>Ce n'est pas un simple CTF, mais une simulation militaire de cybersécurité offensive, défensive et d'influence.</p>
+    </section>
+    <section>
+        <h3>Objectifs</h3>
+        <ul>
+            <li>Simuler des attaques et défenses dans un contexte de guerre numérique.</li>
+            <li>Engager toutes les compétences cyber (SCADA, IoT, réseau, forensic, pentest, etc.).</li>
+            <li>Encadrer les participants avec une structure militaire et un commandement précis.</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Qui organise le CHE ?</h3>
+        <p>Le CHE est encadré par :</p>
+        <ul>
+            <li>Des <b>réservistes militaires</b>, spécialistes en cyberdéfense.</li>
+            <li>Des <b>enseignants et chercheurs</b> en cybersécurité.</li>
+            <li>Des <b>partenaires industriels</b> du domaine.</li>
+            <li>Des <b>alumni et experts bénévoles</b>.</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Où et Quand ?</h3>
+        <p>L'édition CHE 2025 s'est déroulée au <b>Gymnase de Polytech Nancy</b>.</p>
+        <p>Les phases de l'événement s'étendent du <b>10 octobre 2024 au 31 janvier 2025</b>, en suivant 6 grandes étapes :</p>
+        <p></p>
+    
+    <ul>
+        <li> <b>Phase 1 - Kick-off (10 octobre 2024)</b> : Présentation officielle du scénario, des équipes et des objectifs de l'exercice.</li>
+        <p></p>
+        <li> <b>Phase 2 - CTF de chauffe (10 octobre 2024)</b> : Découverte des compétences de chacun ainsi que de l'ambiance CTF.</li>
+        <p></p>
+        <li> <b>Phase 3 - Préparation (janvier 2025)</b> : Organisation des équipes, entraînement et rencontres.</li>
+        <p></p>
+        <li> <b>Phase 4 - Exécution de l'exercice (27 au 29 janvier 2025)</b> : Conduite des opérations de cyberdéfense et cyberattaque en conditions réelles.</li>
+        <p></p>
+        <li> <b>Phase 5 - Analyse et retour d'expérience (30 janvier 2025)</b> : Débriefing détaillé des stratégies, des réussites et des améliorations potentielles.</li>
+        <p></p>
+        <li> <b>Phase 6 - Clôture et remise des prix (31 janvier 2025)</b> : Cérémonie de fin, valorisation des meilleures équipes, remerciements aux partenaires et forum des métiers.</li>
+    </ul>
+        <img src="../images/gymnase.png" alt="Gymnase de Polytech Nancy" class="gymnase-image">
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2025 - Cyber Humanum Est</p>
+    </footer>
+    
+    <script>
+        fetch('../header/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+    </script>
+</body>
+</html>
