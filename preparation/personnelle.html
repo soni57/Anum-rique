@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Préparation - Personnel | Cyber Humanum Est</title>
+    <link rel="stylesheet" href="personnelle.css">
+</head>
+<body>
+    <!-- Header chargé dynamiquement -->
+    <div id="header-container"></div>
+
+    <section>
+        <h3>📌 Préparation du Personnel</h3>
+        <p>La phase de préparation a permis aux participants de se familiariser avec les outils et méthodologies essentielles pour l'exercice <b>Cyber Humanum Est</b>.</p>
+    </section>
+
+    <section>
+        <h3>💬 Communication & Coordination</h3>
+        <p>Un <b>salon Discord</b> dédié a été mis en place pour permettre aux équipes de :</p>
+        <ul>
+            <li>🗣️ Échanger sur les stratégies et les rôles.</li>
+            <li>📢 Suivre les annonces importantes des organisateurs.</li>
+            <li>🔄 Partager des ressources techniques et documentations.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>🎯 Challenges Root-Me</h3>
+        <p>Les participants ont eu accès à des challenges techniques sur Root-Me, répartis en plusieurs catégories :</p>
+        <ul>
+            <li>🌐 <b>Web Client & Web Serveur</b> : XSS, SQL Injection, JWT, File Upload.</li>
+            <li>🖧 <b>Réseau</b> : TELNET - Authentification.</li>
+            <li>📜 <b>Programmation & Scripts</b> : Bash, Powershell, Perl, Docker.</li>
+            <li>🔬 <b>Forensic</b> : Analyse de fichiers, Supply Chain Attacks.</li>
+        </ul>
+        <img src="../images/rootme_challenge.png" alt="Challenges Root-Me" class="preparation-image">
+    </section>
+
+    <section>
+        <h3>🛠️ Modules TryHackMe</h3>
+        <p>Les équipes ont également suivi des <b>modules sur TryHackMe</b>, notamment :</p>
+        <ul>
+            <li>🕵️ Introduction à l’utilisation de Nmap pour la <b>cartographie réseau</b>.</li>
+        </ul>
+        <img src="../images/tryhackme.png" alt="Modules TryHackMe" class="preparation-image">
+    </section>
+
+    <footer>
+        <p>&copy; 2025 - Cyber Humanum Est</p>
+    </footer>
+
+    <!-- Script pour charger le header dynamiquement -->
+    <script>
+        fetch('../header/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+    </script>
+</body>
+</html>

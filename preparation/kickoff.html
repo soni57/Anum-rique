@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kick-Off - Cyber Humanum Est</title>
+    <link rel="stylesheet" href="kickoff.css">
+</head>
+<body>
+    <!-- Header (chargé dynamiquement) -->
+    <div id="header-container"></div>
+
+    <section>
+        <h3>📅 Kick-Off du Cyber Humanum Est</h3>
+        <p><b>Date :</b> 10 octobre 2024</p>
+        <p><b>Lieu :</b> Faculté des Sciences et Technologies de Nancy</p>
+        <p>Le lancement officiel du <b>Cyber Humanum Est 2025</b> a eu lieu à Nancy, réunissant tous les participants pour une première journée immersive.</p>
+    </section>
+
+    <section>
+        <h3>🎤 Présentation du Projet et du Scénario</h3>
+        <p>La journée a commencé avec une <b>présentation en amphithéâtre</b> où :</p>
+        <ul>
+            <li>📌 Le projet Cyber Humanum Est a été expliqué en détail.</li>
+            <li>📌 Le scénario <b>Riverchelles - Anuméric - Cryptanga</b> a été dévoilé.</li>
+            <li>📌 Les objectifs et enjeux stratégiques ont été mis en avant.</li>
+        </ul>
+        <img src="../images/kickoff.png" alt="kickoff" class="kickoff-image">
+    </section>
+
+    <section>
+        <h3>👥 Constitution des Équipes</h3>
+        <p>Après la présentation, les participants ont été répartis en <b>trois équipes</b> :</p>
+        <ul>
+            <li>⚔️ <b>Équipe Anuméric</b> </li>
+            <li>⚔️ <b>Équipe Cryptanga</b> </li>
+            <li>🕵️ <b>APT54 (Hackers indépendants)</b> </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>🎯 Premiers Entraînements CTF sur Root-Me</h3>
+        <img src="../images/repartition_equipe.png" alt="repartition_equipe" class="repartition_equipe">
+        <p>Les participants ont effectué leurs <b>premiers entraînements en équipe</b> sur la plateforme partenaire <b>Root-Me</b> :</p>
+        <ul>
+            <li>💻 Découverte des niveaux techniques de chaque participant.</li>
+            <li>🤝 Renforcement de la cohésion d’équipe.</li>
+            <li>🎭 Constitution des groupes <b>LID (Défense), L2I (Influence), LIO (Offensive)</b>.</li>
+        </ul>
+        <img src="../images/rootme.png" alt="Plateforme Root-Me" class="rootme">
+    </section>
+
+    <footer>
+        <p>&copy; 2025 - Cyber Humanum Est</p>
+    </footer>
+
+    <!-- Script pour charger le header dynamiquement -->
+    <script>
+        fetch('../header/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+    </script>
+</body>
+</html>
