@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scénario - Cyber Humanum Est</title>
+    <link rel="stylesheet" href="scenario.css">
+</head>
+<body>
+    <!-- Header (inclus dynamiquement) -->
+    <div id="header-container"></div>
+
+    <section>
+        <h3>📌 Contexte Géopolitique</h3>
+        <p>L'exercice se déroule dans un univers fictif avec trois nations :</p>
+        <ul>
+            <li><b>Riverchelles</b> : En crise économique et énergétique, cherchant des alliances stratégiques.</li>
+            <img src="../images/Riverchelles.png" alt="Riverchelles" class="riverchelles">
+            <li><b>Anumérique</b> : Une puissance technologique voulant sécuriser un accès exclusif aux ressources de Riverchelles.</li>
+            <img src="../images/Anumérique.png" alt="Anumérique" class="Anumérique">
+            <li><b>Cryptanga</b> : Rival d’Anumérique, cherchant à protéger ses intérêts en Cybérie Australe.</li>
+            <img src="../images/Cryptanga.png" alt="Cryptanga" class="Cryptanga">
+        </ul>
+        <p>La <b>Cybérie Australe</b> est une région disputée par la Rootie et l'Uacranie soutenue respectivement par Cryptanga et Anumérique, où Riverchelles doit choisir un camp pour protéger ses propres intérêts.</p>
+    </section>
+
+    <section>
+        <h3>🎯 Objectifs du Scénario</h3>
+        <p>Les participants doivent :</p>
+        <ul>
+            <li><b>Protéger ou attaquer les infrastructures critiques</b> (énergie, transport, santé).</li>
+            <li> <b>Lancer des cyberattaques offensives</b> contre les systèmes adverses.</li>
+            <li><b>Déployer des stratégies de cyberdéfense</b> pour protéger leurs réseaux.</li>
+            <li> <b>Mener des campagnes de désinformation</b> pour influencer l’opinion publique.</li>
+            <li> <b>Gérer une crise cyber et politique</b> en fonction des événements du scénario.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>🛠 Les Enjeux Cybernétiques</h3>
+        <ul>
+            <li>💻 <b>Opérations offensives (LIO)</b> : Intrusions, exploitation de vulnérabilités, sabotage.</li>
+            <li>🛡️ <b>Défense (LID)</b> : Protection des systèmes, réponse aux incidents.</li>
+            <li>📰 <b>Influence (LII)</b> : Manipulation de l’information, propagande numérique.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>🗡️ Missions des Équipes</h3>
+        <ul>
+            <li> <b>Anumérique & Cryptanga</b> : Obtenir les contrats stratégiques de Riverchelles et influencer son choix d’alliance.</li>
+            <li> <b>APT54 (Hackers indépendants)</b> : Saboter les plans des factions, agir pour leur propre compte ou comme mercenaires.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3> Conclusion</h3>
+        <p>Le scénario du CHE 2025 est une simulation réaliste mêlant <b>cyberdéfense, cyberattaque et guerre d’influence</b>. Chaque décision impacte le déroulement global, obligeant les participants à jongler entre <b>techniques cyber, stratégies militaires et diplomatie numérique</b>.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 - Cyber Humanum Est</p>
+    </footer>
+
+    <!-- Script pour charger le header dynamiquement -->
+    <script>
+        fetch('../header/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+    </script>
+</body>
+</html>
