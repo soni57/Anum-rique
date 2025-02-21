@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>⚔️ LIO - Attaque</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="LIO.css">
+    </head>
+    <body>
+        <div id="header-container"></div>
+
+        <section>
+            <h3>⚔️ - Mise en place dans la tente</h3>
+            <p>Le <b>positionnement dans la tente</b> était primordial, l'attaque devant absolument être sur un switch donnant des IP fixes afin de pouvoir être bloquée par l'équipe adverse.</p>
+            <img src="../images/LIO-tente.png" alt="Photo tente" class="LIO-image">
+            <p>Les deux premières tables sont pour <b>l'Attaque</b>, les deux suivantes sont pour la <b>Défense</b> et une au fond pour <b>l'Influence</b>.</p>
+            <p>Une table derrière le photographe est réservée pour les <b>capitaines et lieutenants</b>.</p>
+        </section>
+
+        <section>
+            <h3>0 - Respect de la hiérarchie</h3>
+            <p>Une règle extrêmement importante durant cet exercice est le respect de la hiérarchie. En effet, chaque action, chaque attaque devait être approuvée par les capitaines puis le staff.
+                Pour ce faire, nous avions un site, <b>start.che</b>, qui permettait de faire des tickets pour demander au staff d'accepter des actions.
+                Nous avons mis en place un salon <b>Discord</b> pour que chaque personne puisse demander de faire quelque chose, que les capitaines acceptent, puis qu'une personne désignée remplisse un ticket et donne la réponse du staff.
+            </p>
+            <p>Par exemple, le ticket suivant a été refusé par le staff, car il était jugé qu'il bloquerait trop l'avancée de l'équipe adverse.</p>
+            <img src="../images/LIO-ticket.png" alt="Exemple ticket" class="LIO-image">
+        </section>
+
+        <section>
+            <h3>Ⅰ - Découverte du réseau adverse</h3>
+            <p>En utilisant l'outil <b>NMAP</b>, nous avons pu cartographier le réseau de l'équipe CRYPTANGA.</p>
+            <img src="../images/LOGO_Nmap.jpg" alt="Logo nmap" class="LIO-image">
+            <p>À partir de ce que nous avons trouvé, nous avons fait un document contenant tous les sites web et services trouvés sur leur réseau.</p>
+            <img src="../images/LIO-site-cryptanga.png" alt="site web CRYPTANGA" class="LIO-image">
+        </section>
+
+        <section>
+            <h3>Ⅱ - Objectif Faille</h3>
+            <p>Une fois les sites et services trouvés, nous devons juste trouver des failles. Nous avons utilisé de nombreux outils pour cela.</p>
+            <div class="images-outils">
+                <img src="../images/LIO-burp-suite-logo.png" alt="Logo burp suite" class="LIO-image">
+                <img src="../images/LIO-hydra.webp" alt="Logo hydra" class="LIO-image">
+                <img src="../images/LIO-sqlmap.png" alt="Logo sqlmap" class="LIO-image">
+                <img src="../images/LIO-gobuster.png" alt="Logo go buster" class="LIO-image">
+            </div>
+            <p>Avec ces outils, nous avons pu trouver des failles dans les services et, de là, les exploiter.</p>
+        </section>
+
+        <section>
+            <h3>Ⅲ - Les Flags</h3>
+            <p>Autre grande partie de l'attaque, les <b>FLAGS</b> - des challenges lancés par le staff rapportant des points. Certains se récupéraient en faisant tomber des infrastructures, d'autres en défendant/attaquant du matériel ennemi (pour nous, en attaquant les trains cryptangais).</p>
+            <img src="../images/LIO-trains.jpg" alt="trains cryptangais" class="LIO-image">
+            <p>De plus, d'autres challenges ont été proposés sur Discord, rapportant aussi des points. Malheureusement, nous n'avons pas réussi à les faire.</p>
+            <img src="../images/LIO-challenges-rooxy.png" alt="Challenges de rooxy" class="LIO-image">
+        </section>
+
+        <section>
+            <h3>Ⅳ - Évolution des attaques</h3>
+            <p>Afin d'augmenter l'intérêt au fur et à mesure de l'exercice, certaines attaques étaient interdites au début, puis autorisées. Par exemple, le DOS a été autorisé le mercredi 28 janvier à 5 h du matin !</p>
+            <p>Voilà à quoi ressemble une capture Wireshark lorsque nous faisons une attaque DOS sur une cible (10.140.99.88).</p>
+            <img src="../images/LIO-wireshark-DDOS.png" alt="Capture wireshark d'un DOS" class="LIO-image">
+            <p>Mais attention ! Si nous faisions une attaque non autorisée, nous perdions des points ! (Cryptanga en a fait les frais !)</p>
+            <img src="../images/LIO-DOS-crypt.png" alt="CHE cryptanga" class="LIO-image">
+        </section>
+
+        <footer>
+            <p>&copy; 2025 - Cyber Humanum Est</p>
+        </footer>
+        <script>
+            fetch('../header/header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('header-container').innerHTML = data);
+        </script>
+    </body>
+</html>

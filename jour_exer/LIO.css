@@ -74,6 +74,11 @@ nav ul li:hover .submenu {
     background: #eee;
 }
 
+
+
+
+
+
 section {
     max-width: 800px;
     margin: 40px auto;
@@ -105,20 +110,31 @@ ul li {
     font-size: 1.1em;
 }
 
-.kickoff-image {
+.LIO-image {
     display: block;
-    max-width: 60%;
+    max-width: 80%;
     height: auto;
     margin: 20px auto;
     border-radius: 10px;
 }
-.rootme {
-    display: block;
-    max-width: 60%;
-    height: auto;
-    margin: 20px auto;
-    border-radius: 10px;
+
+.images-outils {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 800px;
+    margin: auto;
 }
+
+.images-outils img {
+    width: calc(50% - 5px); /* 50% de la largeur moins l'espace du gap */
+    height: auto; /* Garde le ratio */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+
+
 
 footer {
     background: #1b263b;
