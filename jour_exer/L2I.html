@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📰 - L2I</title>
+    <link rel="stylesheet" href="L2I.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    <section>
+        <h3>L2I ? QUEZACO</h3>
+        <p>Malheureusement, aucun de nous ne fut affécté à la L2I, étant donné que cette section est plutot pour les étudiants qui suivent le master <b>VSOC</b>.
+        Mais pour résumer, la <b>Lutte Informatique d'Influence</b> a pour but de salir l'image des équipes adverse. Cela peut se faire à base de "meme" envoyé sur un reseau social global du CHE ou encore à partir de post de PNJ.
+        Ils peuvent aussi faire des news en lien avec nos attaques ou nos défenses pour décrédibiliser nos ennemis.
+        </p>
+        <img src="../images/L2I-post.png" alt="post L2I" class="L2I-image">
+    </section>
+    <section>
+        <h3>🎯 - Le but Final</h3>
+        <p>La L2I travaille surtout pour sécuriser des contrats avec les Riverchelles et d'obtenir leurs soutiens dans le conflit de la Cybérie Autrale (Rootie contre l'Uacranie)
+            En discreditant les équipes adverses, ils travaillent à la récupération de ces contrats. Ils veillent cependant à ne pas propager trop de fake news, car cela pourrait se retourner contre eux.
+        </p>
+    </section>
+    <section>
+        <h3>🏆 - Le prix!</h3>
+        <p>Cette année, Anuméric a reçu le prix de la meilleure L2I!</p>
+        <img src="../images/L2I-prix.gif" alt="prix L2I" class="L2I-image">
+        <p>Meme si nous n'avons que très peu participé à la partie L2I de notre équipe, nous avons bien vu leur <b>Influence</b> et leur <b>Talent</b></p>
+        <img src="../images/L2I-drapeau.gif" alt="drapeau Anumeric" class="L2I-image">
+    </section>
+    <script>
+        fetch('../header/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+    </script>
+</body>
+</html>
