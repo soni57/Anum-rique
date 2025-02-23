@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>🛡️ LID - Défense</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="LID.css">
+    </head>
+    <body>
+        <div id="header-container"></div>
+
+        <section>
+            <h3>🛡️ - Positionnement et organisation</h3>
+            <p>Le <b>positionnement dans la tente</b> était primordial, la défense devant absolument être sur un switch permettant de donner des adresse IP appartenant a notre réseau pour le cartographié.</p>
+            <img src="../images/LIO-tente.png" alt="Photo tente" class="LIO-image">
+            <p>Les deux premières tables sont pour <b>l'Attaque</b>, les deux suivantes sont pour la <b>Défense</b> et une au fond pour <b>l'Influence</b>.</p>
+            <p>Une table derrière le photographe est réservée pour les <b>capitaines et lieutenants</b>.</p>
+        </section>
+
+        <section>
+            <h3>0 - Communication et stratégie</h3>
+            <p>Une coordination stricte était nécessaire. Les capitaines validaient chaque action et s'assuraient de l'avancement de la cartographie et de savoir quels infrastructure on pouvait proteger. Nous utilisions  un canal <b>Discord</b> pour synchroniser les infrastructures trouvées et un tableau Excel pour repertorié toutes les adresses IP scannée et les serveurs, application ou pare-feu present dessus.</p>
+            <img src="../images/LID-Cartographie.png" alt="Exemple cartographie" class="LID-image">
+        </section>
+
+        <section>
+            <h3>Ⅰ - Cartographie du réseau</h3>
+            <p>Nous avons utilisé les commandes <b>nmap</b> et <b>masscan</b> pour analyser nos infrastructure et trouver toutes les informations suceptible d'être vulnérable.</p>
+            <img src="../images/LOGO_Nmap.jpg" alt="Logo nmap" class="LIO-image">
+            <p>Chaque adresse IP a été documenté, chaque interface trouvée a été associé a chaque adresse IP et chaque port du switch, qui repartissait les adresses IP de notre reseau sur chaque ordinateur, a été associé a chaque IP</p>
+            <img src="../images/LID-Infra.png" alt="Exemple cartographie" class="LID-image">
+        </section>
+
+
+        <section>
+            <h3>ⅠⅠ - Surveillance du réseau</h3>
+            <p>Nous avons utilisé <b>Wireshark</b> pour analyser le trafic réseau et détecter les attaques adverses.</p>
+            <img src="../images/LOGO_Wireshark.png" alt="Logo Wireshark" class="LID-image">
+            <p>Chaque alerte repérer était communiqué pour que nous puissions mettre en place les règles de filtrage et aunsi bloquer les intrusions.</p>
+            <p>Grâce à ces mise en place, nous avons pu repousser plusieurs tentatives d'intrusion.</p>
+        </section>
+
+        <section>
+            <h3>Ⅲ - Réaction aux attaques</h3>
+            <p>En cas d'attaque, nous avons rapidement isolé les machines compromises et bloqué les adresses IP suspectes.</p>
+            <img src="../images/LID-isolation.png" alt="Blockage IP" class="LID-image">
+            <p>Un suivi en temps réel nous a permis de minimiser les impacts et de préserver nos systèmes.</p>
+        </section>
+
+        <section>
+            <h3>Ⅳ - Evolution de la défense</h3>
+            <p>Vers le milieu de l'exercice, il nous a été fournis un GIC (Groupement d'Intervention Cyber) contenant des outils qui nous permettait de deployer des agents sur nos serveurs, nos machines et qui centralisait les logs, les pare-feu et nous permmettait une bien meilleur protection contre les attaques.</p>
+            <img src="../images/LID-SOC.png" alt="SOC inclue dans le GIC" class="LID-image">
+        </section>
+
+        <footer>
+            <p>&copy; 2025 - Cyber Humanum Est</p>
+        </footer>
+        <script>
+            fetch('../header/header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('header-container').innerHTML = data);
+        </script>
+    </body>
+</html>
