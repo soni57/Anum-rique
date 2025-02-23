@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>🔍 Retour d'Expérience (RETEX)</title>
+        <meta name="description" content="Retour d'expérience du Cyber Humanum Est 2025">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="retex.css">
+    </head>
+    <body>
+        <div id="header-container"></div>
+
+        <section>
+            <h3>🔍 Cyber Humanum Est 2025 - Le RETEX</h3>
+            <p>Suite à l'exercice, place au retour d'expérience (RETEX) en présence des 115 participants, des organisateurs, des partenaires et des représentants de l'armée française.</p>
+            <p>L'événement s'est tenu aux Mines de Nancy, où le directeur de l'école nous a accueillis chaleureusement.</p>
+            <img src="../images/retex.png" alt="Lieu du RETEX" class="retex-image">
+        </section>
+
+        <section>
+            <h3>🎤 Les prises de parole</h3>
+            <p>Cette session de retour d'expérience a été l'occasion pour chacun de partager ses impressions et les enseignements tirés de l'exercice.</p>
+            
+            <h4>🛡️ Témoignages des équipes</h4>
+            <p>Les trois équipes engagées dans l'événement – <b>Anumérique, APT et Crypntanga</b> – ont présenté leur retour d'expérience devant l'assemblée.</p>
+            <p>Chaque équipe a exposé ses réussites, mais aussi les difficultés rencontrées au cours de l'exercice.</p>
+        
+            <h4>🎙️ Intervention des organisateurs</h4>
+            <p>Rooxy, un des organisateurs, a pris la parole pour partager son regard sur l'événement. Il a notamment souligné l'implication des participants et la richesse des stratégies mises en place.</p>
+        </section>
+
+        <section>
+            <h3>🏆 Vers l'annonce des résultats</h3>
+            <p>À la fin de cette session, les résultats finaux n'ont pas encore été dévoilés. Ceux-ci seront annoncés officiellement le lendemain lors de la cérémonie de remise des diplômes.</p>
+            <img src="../images/partenaires.png" alt="Partenaires du CHE" class="retex-image">
+        </section>
+
+        <footer>
+            <p>&copy; 2025 - Cyber Humanum Est</p>
+        </footer>
+        <script>
+            fetch('../header/header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('header-container').innerHTML = data);
+        </script>
+    </body>
+</html>
