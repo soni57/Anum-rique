@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>🏆 Remise des Prix</title>
+        <meta name="description" content="Remise des prix du Cyber Humanum Est 2025">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="retex.css">
+    </head>
+    <body>
+        <div id="header-container"></div>
+
+        <section>
+            <h3>🏆 Cyber Humanum Est 2025 - Remise des Prix</h3>
+            <p>Après le retour d'expérience, tous les participants, organisateurs et partenaires se sont réunis dans une salle de conférence à l'<b>IUT Nancy-Brabois</b> pour la remise des prix.</p>
+            <p>L'événement a débuté par un discours du directeur, marquant la clôture officielle de cette aventure intense.</p>
+            <img src="../images/salle_remise_prix.png" alt="Salle remise des prix" class="retex-image">
+        </section>
+
+        <section>
+            <h3>🏅 Les récompenses</h3>
+            <p>Six prix ont été décernés, mettant en avant les meilleures performances dans différentes catégories :</p>
+            <ul>
+                <li>🏆 Meilleure équipe LIO</li>
+                <li>🏆 Meilleure équipe LID</li>
+                <li>🏆 Meilleure équipe L2I - <b>gagné par Anumérique</b></li>
+                <li>🏆 Meilleure attaque</li>
+                <li>🏆 Meilleure gestion de crise - <b>gagné par Anumérique</b></li>
+                <li>🏆 Un dernier prix dont nous ne nous souvenons plus</li>
+                <img src="../images/remise_prix.png" alt="Remise des prix" class="retex-image">
+            </ul>
+        </section>
+
+        <section>
+            <h3>🥇 Les vainqueurs</h3>
+            <p>Malgré nos deux victoires, c'est l'équipe <b>Cryptanga</b> qui a été sacrée <b>vainqueur globale</b> du Cyber Humanum Est 2025.</p>
+            <p>Une légère déception pour nous, mais vite balayée par la fierté d’avoir participé à un événement aussi exceptionnel.</p>
+        </section>
+
+        <section>
+            <h3>🎁 Diplômes et récompenses</h3>
+            <p>Pour clôturer cette édition, chaque participant a reçu un <b>diplôme officiel</b> ainsi que des <b>goodies offerts par les partenaires</b> du CHE.</p>
+            <img src="../images/diplome_che.png" alt="Diplômes et goodies" class="retex-image">
+        </section>
+
+        <footer>
+            <p>&copy; 2025 - Cyber Humanum Est</p>
+        </footer>
+        <script>
+            fetch('../header/header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('header-container').innerHTML = data);
+        </script>
+    </body>
+</html>
